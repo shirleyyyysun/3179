@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Top countries with SARS by gender",
+  "data": {
+    "url": "https://raw.githubusercontent.com/shirleyyyysun/3179/main/summary_data_clean.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Country/Region",
+        "oneOf": [
+          "Viet Nam",
+          "Hong Kong SAR, China",
+          "Taiwan",
+          "United States",
+          "China",
+          "Thailand",
+          "Mongolia",
+          "Canada",
+          "Singapore",
+          "Philippines"
+        ]
+      }
+    }
+  ],
+  "spacing": 0,
+  "hconcat": [
+    {
+      "title": "Female",
+      "mark": "bar",
+      "encoding": {
+        "y": {"field": "Country/Region", "axis": null, "sort": "ascending"},
+        "x": {
+          "aggregate": "sum",
+          "field": "Cumulative female cases",
+          "title": "Cumulative female cases",
+          "axis": {"format": "s"},
+          "sort": "descending"
+        },
+        "color": {
+          "field": "Cumulative female cases",
+          "scale": {"range": ["#675193"]},
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "Country/Region", "type": "nominal", "title": "Country"},
+          {"field": "Cumulative female cases", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "width": 20,
+      "view": {"stroke": null},
+      "mark": {"type": "text", "align": "center"},
+      "encoding": {
+        "y": {
+          "field": "Country/Region",
+          "type": "nominal",
+          "axis": null,
+          "sort": "ascending"
+        },
+        "text": {"field": "Country/Region", "type": "nominal"}
+      }
+    },
+    {
+      "title": "Male",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Country/Region",
+          "title": null,
+          "axis": null,
+          "sort": "ascending"
+        },
+        "x": {
+          "aggregate": "sum",
+          "field": "Cumulative male cases",
+          "title": "Cumulative male cases",
+          "axis": {"format": "s"}
+        },
+        "color": {"field": "Cumulative male cases", "legend": null},
+        "tooltip": [
+          {"field": "Country/Region", "type": "nominal", "title": "Country"},
+          {"field": "Cumulative male cases", "type": "quantitative"}
+        ]
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+}
