@@ -28,7 +28,7 @@
   "encoding": {"x": {"field": "Country/Region", "type": "nominal"}},
   "layer": [
     {
-      "mark": {"type": "bar", "color": "skyblue"},
+      "mark": {"type": "bar", "color": "#CC2808"},
       "encoding": {
         "y": {
           "field": "Cumulative total cases",
@@ -42,7 +42,7 @@
       }
     },
     {
-      "mark": {"type": "bar", "color": "orange"},
+      "mark": {"type": "bar", "color": "#E78759"},
       "encoding": {
         "y": {
           "field": "Number of deaths",
