@@ -39,7 +39,7 @@
         },
         "color": {
           "field": "Cumulative female cases",
-          "scale": {"range": ["#675193"]},
+          "scale": {"range": ["#EE9F6E"]},
           "legend": null
         },
         "tooltip": [
