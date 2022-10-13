@@ -1,4 +1,4 @@
-Country/Region,Cumulative male cases,Cumulative female cases,Cumulative total cases,No. of deaths,Case fatalities ratio (%),Date onset first probable case,Date onset last probable case,Median age,Age range,Number of Imported cases,Percentage of Imported cases,Number of HCW affected,Percentage of HCW affected
+Country/Region,Cumulative male cases,Cumulative female cases,Cumulative total cases,Number of deaths,Case fatalities ratio (%),Date onset first probable case,Date onset last probable case,Median age,Age range,Number of Imported cases,Percentage of Imported cases,Number of HCW affected,Percentage of HCW affected
 Australia,4,2,6,0,0,2003-02-26,2003-04-01,15,1-45,6,100,0,0
 Canada,151,100,251,43,17,2003-02-23,2003-06-12,49,1-98,5,2,109,43
 China,2674,2607,5327,349,7,2002-11-16,2003-06-03,,,,,1002,19
