@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "background": "#77bedc",
+  "background": "#9dc8da",
   "description": "Top countries with SARS by gender",
   "data": {
     "url": "https://raw.githubusercontent.com/shirleyyyysun/3179/main/summary_data_clean.csv"
