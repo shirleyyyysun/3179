@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/shirleyyyysun/3179/main/sars_2003_complete_dataset_clean.csv"
+  },
+  "background": "#77bedc",
+  "width": 400,
+  "title": "Trending of SARS Recovered Cases",
+  "transform": [
+    {
+      "aggregate": [
+        {"op": "sum", "field": "Number recovered", "as": "Total recovered"}
+      ],
+      "groupby": ["Date"]
+    }
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Date", "title": "Month", "type": "temporal"},
+    "y": {
+      "field": "Total recovered",
+      "type": "quantitative",
+      "title": "Count of Cases"
+    },
+    "tooltip": [
+      {"field": "Date", "type": "temporal"},
+      {"field": "Total recovered", "type": "quantitative"}
+    ]
+  },
+  "config": {
+    "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "header": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "mark": {"font": "Open Sans"},
+    "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "title": {"font": "Open Sans"},
+    "style": {"cell": {"stroke": "transparent"}},
+    "text": {"align": "center", "fontWeight": "bold", "font": "Open Sans"},
+    "line": {"color": "red"}
+  }
+}
