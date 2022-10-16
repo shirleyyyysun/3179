@@ -3,6 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/shirleyyyysun/3179/main/sars_2003_complete_dataset_clean.csv"
   },
+  "background": "#77bedc",
   "width": 400,
   "title": "Trending of SARS Cases",
   "transform": [
@@ -37,6 +38,7 @@
     "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
     "title": {"font": "Open Sans"},
     "style": {"cell": {"stroke": "transparent"}},
-    "text": {"align": "center", "fontWeight": "bold", "font": "Open Sans"}
+    "text": {"align": "center", "fontWeight": "bold", "font": "Open Sans"},
+    "line": {"color": "red"}
   }
 }
