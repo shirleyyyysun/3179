@@ -39,6 +39,6 @@
     "title": {"font": "Open Sans"},
     "style": {"cell": {"stroke": "transparent"}},
     "text": {"align": "center", "fontWeight": "bold", "font": "Open Sans"},
-    "line": {"color": "red"}
+    "line": {"color": "red"},
   }
 }
