@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/shirleyyyysun/3179/main/sars_2003_complete_dataset_clean.csv"
   },
-  "background": "#77bedc",
+  "background": "#9dc8da",
   "width": 400,
   "title": "Trending of SARS Recovered Cases",
   "transform": [
