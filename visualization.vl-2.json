@@ -16,7 +16,7 @@
   ],
   "mark": "line",
   "encoding": {
-    "x": {"field": "Date", "title": "Month", "type": "temporal"},
+    "x": {"field": "Date", "title": "Date", "type": "temporal"},
     "y": {
       "field": "Total recovered",
       "type": "quantitative",
