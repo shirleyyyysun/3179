@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/shirleyyyysun/3179/main/sars_2003_complete_dataset_clean.csv"
   },
   "background": "#9dc8da",
-  "width": 500,
+  "width": 480,
   "title": "Trending of SARS Cases",
   "transform": [
     {
@@ -20,7 +20,7 @@
   ],
   "mark": "line",
   "encoding": {
-    "x": {"field": "Date", "title": "Month", "type": "temporal"},
+    "x": {"field": "Date", "title": "Date", "type": "temporal"},
     "y": {
       "field": "Total cases",
       "type": "quantitative",
